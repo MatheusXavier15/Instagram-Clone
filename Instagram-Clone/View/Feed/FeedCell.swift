@@ -53,7 +53,7 @@ struct FeedCell: View {
             Text("100 likes").font(.system(size: 14, weight: .semibold)).padding(.leading, 8).padding(.bottom, 4)
             
             HStack(spacing: 5) {
-                Text("Photo").font(.system(size: 14, weight: .semibold))
+                Text("User01").font(.system(size: 14, weight: .semibold))
                 Text("A test photo").font(.system(size: 15))
             }.padding(.horizontal, 8)
             
