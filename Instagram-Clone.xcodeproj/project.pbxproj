@@ -16,6 +16,7 @@
 		069AF62D28826A4F00C210A4 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF62C28826A4F00C210A4 /* ProfileHeaderView.swift */; };
 		069AF62F288272C500C210A4 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF62E288272C500C210A4 /* UserStatView.swift */; };
 		069AF631288273F500C210A4 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF630288273F500C210A4 /* ProfileActionButtonView.swift */; };
+		069AF63328827E1100C210A4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF63228827E1100C210A4 /* ImagePicker.swift */; };
 		06D6EF372881229C0095C49A /* Instagram_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D6EF362881229C0095C49A /* Instagram_CloneApp.swift */; };
 		06D6EF3B2881229E0095C49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D6EF3A2881229E0095C49A /* Assets.xcassets */; };
 		06D6EF3E2881229E0095C49A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D6EF3D2881229E0095C49A /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		069AF62C28826A4F00C210A4 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		069AF62E288272C500C210A4 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		069AF630288273F500C210A4 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		069AF63228827E1100C210A4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		06D6EF332881229C0095C49A /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D6EF362881229C0095C49A /* Instagram_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_CloneApp.swift; sourceTree = "<group>"; };
 		06D6EF3A2881229E0095C49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				069AF6282881AB8000C210A4 /* Extensions.swift */,
+				069AF63228827E1100C210A4 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				06D6EF372881229C0095C49A /* Instagram_CloneApp.swift in Sources */,
 				06D6EF4B288123D20095C49A /* ContentView.swift in Sources */,
 				06D6EF60288124DE0095C49A /* ProfileView.swift in Sources */,
+				069AF63328827E1100C210A4 /* ImagePicker.swift in Sources */,
 				069AF62D28826A4F00C210A4 /* ProfileHeaderView.swift in Sources */,
 				06D6EF642881251D0095C49A /* UploadPostView.swift in Sources */,
 				069AF62F288272C500C210A4 /* UserStatView.swift in Sources */,
