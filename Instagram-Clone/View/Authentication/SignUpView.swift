@@ -16,6 +16,7 @@ struct SignUpView: View {
     @State private var selectedImage: UIImage?
     @State var postImage: Image?
     @Environment(\.presentationMode) var mode
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         ZStack {
@@ -83,7 +84,7 @@ struct SignUpView: View {
                     .padding(.horizontal, 32)
                 
                 Button {
-                    //
+                    viewModel.register(withEmail: email, password: password, username: username, fullname: fullname, image: selectedImage)
                 } label: {
                     Text("Sign Up")
                         .font(.headline)
