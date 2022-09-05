@@ -12,6 +12,7 @@
 		062D78C928833C49005E7311 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D78C828833C49005E7311 /* ResetPasswordView.swift */; };
 		062D78CB28834560005E7311 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D78CA28834560005E7311 /* CustomTextField.swift */; };
 		062D78CD2883456A005E7311 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D78CC2883456A005E7311 /* CustomSecureField.swift */; };
+		066EBF56289CA4ED004B507F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EBF55289CA4ED004B507F /* SearchViewModel.swift */; };
 		069AF6212881A0B500C210A4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6202881A0B500C210A4 /* SearchBar.swift */; };
 		069AF6232881A3E100C210A4 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6222881A3E100C210A4 /* PostGridView.swift */; };
 		069AF6252881A5B000C210A4 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6242881A5B000C210A4 /* UserListView.swift */; };
@@ -53,6 +54,7 @@
 		062D78C828833C49005E7311 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		062D78CA28834560005E7311 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		062D78CC2883456A005E7311 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		066EBF55289CA4ED004B507F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		069AF6202881A0B500C210A4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		069AF6222881A3E100C210A4 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		069AF6242881A5B000C210A4 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				06D6EF56288124620095C49A /* Authentication */,
 				06D6EF552881245E0095C49A /* Notifications */,
 				06D6EF542881245B0095C49A /* Feed */,
+				066EBF55289CA4ED004B507F /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				069AF6252881A5B000C210A4 /* UserListView.swift in Sources */,
 				06D6EF5A288124A70095C49A /* MainTabView.swift in Sources */,
 				062D78CD2883456A005E7311 /* CustomSecureField.swift in Sources */,
+				066EBF56289CA4ED004B507F /* SearchViewModel.swift in Sources */,
 				069AF6212881A0B500C210A4 /* SearchBar.swift in Sources */,
 				06D6EF62288125020095C49A /* NotificationsView.swift in Sources */,
 				06F5235228907F7F00F605E7 /* User.swift in Sources */,

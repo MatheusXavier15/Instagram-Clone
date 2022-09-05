@@ -8,10 +8,14 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct User: Codable {
+struct User: Identifiable, Codable {
     let email: String
     let username: String
     let fullname: String
     let profileImageUrl: String
     @DocumentID var id: String?
+    
+    var isCurrentUser: Bool {
+        return AuthViewModel.shared.userSession?.uid == id
+    }
 }

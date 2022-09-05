@@ -12,6 +12,7 @@ import UIKit
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     static let shared = AuthViewModel()
     
     init(){
@@ -27,6 +28,7 @@ class AuthViewModel: ObservableObject {
             }
             guard let user = result?.user else { return }
             self.userSession = user
+            self.fetchUser()
             print("Successfully logged in user...")
         }
     }
@@ -70,6 +72,7 @@ class AuthViewModel: ObservableObject {
                 return
             }
             guard let user = try? snapshot?.data(as: User.self) else { return }
+            self.currentUser = user
         }
     }
     
