@@ -13,9 +13,11 @@ struct Post: Identifiable, Decodable {
     @DocumentID var id: String?
     let caption: String
     let timestamps: Timestamp
-    let likes: Int
+    var likes: Int
     let imageUrl: String
     let ownerId: String
     let ownerImageUrl: String
     let ownerUsername: String
+    
+    var didLike: Bool? = false
 }

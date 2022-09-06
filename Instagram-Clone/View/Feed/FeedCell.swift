@@ -9,11 +9,19 @@ import SwiftUI
 import Kingfisher
 
 struct FeedCell: View {
-    let post: Post
+    @ObservedObject var viewModel: FeedCellViewModel
+    var didLike: Bool {
+        return viewModel.post.didLike ?? false
+    }
+    
+    init(viewModel: FeedCellViewModel){
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                KFImage(URL(string: post.ownerImageUrl))
+                KFImage(URL(string: viewModel.post.ownerImageUrl))
                     .resizable()
                     .symbolVariant(.circle)
                     .scaledToFill()
@@ -21,20 +29,23 @@ struct FeedCell: View {
                     .clipped()
                     .cornerRadius(18)
                 
-                Text(post.ownerUsername)
+                Text(viewModel.post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold))
                 
             }.padding([.leading, .bottom], 8)
-            KFImage(URL(string: post.imageUrl))
+            KFImage(URL(string: viewModel.post.imageUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(maxWidth: UIScreen.main.bounds.size.width, maxHeight: 380)
                 .clipped()
             HStack(spacing: 8) {
-                Button {} label: {
-                    Image(systemName: "heart")
+                Button {
+                    didLike ? viewModel.unlike() : viewModel.like()
+                } label: {
+                    Image(systemName: didLike ? "heart.fill" : "heart")
                         .resizable()
                         .scaledToFit()
+                        .foregroundColor(didLike ? .red : .black)
                         .frame(width: 20, height: 20)
                 }.padding(4)
                 Button {} label: {
@@ -52,11 +63,11 @@ struct FeedCell: View {
             }.foregroundColor(.black)
                 .padding([.leading, .bottom], 8)
             
-            Text("\(post.likes) likes").font(.system(size: 14, weight: .semibold)).padding(.leading, 8).padding(.bottom, 4)
+            Text(viewModel.likeString).font(.system(size: 14, weight: .semibold)).padding(.leading, 8).padding(.bottom, 4)
             
             HStack(spacing: 5) {
-                Text(post.ownerUsername).font(.system(size: 14, weight: .semibold))
-                Text(" \(post.caption)").font(.system(size: 15))
+                Text(viewModel.post.ownerUsername).font(.system(size: 14, weight: .semibold))
+                Text(" \(viewModel.post.caption)").font(.system(size: 15))
             }.padding(.horizontal, 8)
             
             Text("2d").font(.system(size: 14)).foregroundColor(.gray).padding(.leading, 8).padding(.top, -4)
