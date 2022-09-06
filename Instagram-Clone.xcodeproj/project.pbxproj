@@ -17,6 +17,8 @@
 		0698C8BC28C65F46000AD20A /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698C8BB28C65F46000AD20A /* UserServices.swift */; };
 		0698C8C028C6D536000AD20A /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698C8BF28C6D536000AD20A /* UploadPostViewModel.swift */; };
 		0698C8C228C6DBB9000AD20A /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698C8C128C6DBB9000AD20A /* TextArea.swift */; };
+		0698C8C428C6E301000AD20A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698C8C328C6E301000AD20A /* Post.swift */; };
+		0698C8C628C6E425000AD20A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698C8C528C6E425000AD20A /* FeedViewModel.swift */; };
 		069AF6212881A0B500C210A4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6202881A0B500C210A4 /* SearchBar.swift */; };
 		069AF6232881A3E100C210A4 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6222881A3E100C210A4 /* PostGridView.swift */; };
 		069AF6252881A5B000C210A4 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6242881A5B000C210A4 /* UserListView.swift */; };
@@ -27,6 +29,7 @@
 		069AF62F288272C500C210A4 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF62E288272C500C210A4 /* UserStatView.swift */; };
 		069AF631288273F500C210A4 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF630288273F500C210A4 /* ProfileActionButtonView.swift */; };
 		069AF63328827E1100C210A4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF63228827E1100C210A4 /* ImagePicker.swift */; };
+		06A484D428C6EC5C006F99B4 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */; };
 		06D6EF372881229C0095C49A /* Instagram_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D6EF362881229C0095C49A /* Instagram_CloneApp.swift */; };
 		06D6EF3B2881229E0095C49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D6EF3A2881229E0095C49A /* Assets.xcassets */; };
 		06D6EF3E2881229E0095C49A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D6EF3D2881229E0095C49A /* Preview Assets.xcassets */; };
@@ -63,6 +66,8 @@
 		0698C8BB28C65F46000AD20A /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		0698C8BF28C6D536000AD20A /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		0698C8C128C6DBB9000AD20A /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		0698C8C328C6E301000AD20A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0698C8C528C6E425000AD20A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		069AF6202881A0B500C210A4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		069AF6222881A3E100C210A4 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		069AF6242881A5B000C210A4 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
@@ -73,6 +78,7 @@
 		069AF62E288272C500C210A4 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		069AF630288273F500C210A4 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		069AF63228827E1100C210A4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		06D6EF332881229C0095C49A /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D6EF362881229C0095C49A /* Instagram_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_CloneApp.swift; sourceTree = "<group>"; };
 		06D6EF3A2881229E0095C49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				06F5235128907F7F00F605E7 /* User.swift */,
+				0698C8C328C6E301000AD20A /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +212,7 @@
 				06D6EF542881245B0095C49A /* Feed */,
 				066EBF55289CA4ED004B507F /* SearchViewModel.swift */,
 				0698C8BF28C6D536000AD20A /* UploadPostViewModel.swift */,
+				06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 		06D6EF542881245B0095C49A /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				0698C8C528C6E425000AD20A /* FeedViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -405,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0698C8C628C6E425000AD20A /* FeedViewModel.swift in Sources */,
 				06D6EF5E288124D00095C49A /* SearchView.swift in Sources */,
 				069AF6272881A5B700C210A4 /* UserCell.swift in Sources */,
 				06D6EF5C288124C00095C49A /* FeedView.swift in Sources */,
@@ -414,6 +424,7 @@
 				06D6EF372881229C0095C49A /* Instagram_CloneApp.swift in Sources */,
 				06D6EF4B288123D20095C49A /* ContentView.swift in Sources */,
 				06D6EF60288124DE0095C49A /* ProfileView.swift in Sources */,
+				06A484D428C6EC5C006F99B4 /* PostGridViewModel.swift in Sources */,
 				062D78C928833C49005E7311 /* ResetPasswordView.swift in Sources */,
 				069AF63328827E1100C210A4 /* ImagePicker.swift in Sources */,
 				0698C8C028C6D536000AD20A /* UploadPostViewModel.swift in Sources */,
@@ -426,6 +437,7 @@
 				069AF6252881A5B000C210A4 /* UserListView.swift in Sources */,
 				06D6EF5A288124A70095C49A /* MainTabView.swift in Sources */,
 				062D78CD2883456A005E7311 /* CustomSecureField.swift in Sources */,
+				0698C8C428C6E301000AD20A /* Post.swift in Sources */,
 				066EBF56289CA4ED004B507F /* SearchViewModel.swift in Sources */,
 				069AF6212881A0B500C210A4 /* SearchBar.swift in Sources */,
 				06D6EF62288125020095C49A /* NotificationsView.swift in Sources */,

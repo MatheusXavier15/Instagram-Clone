@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FeedCell: View {
+    let post: Post
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image(systemName: "person")
+                KFImage(URL(string: post.ownerImageUrl))
                     .resizable()
                     .symbolVariant(.circle)
                     .scaledToFill()
@@ -19,11 +21,11 @@ struct FeedCell: View {
                     .clipped()
                     .cornerRadius(18)
                 
-                Text("User01")
+                Text(post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold))
                 
             }.padding([.leading, .bottom], 8)
-            Image(systemName: "photo")
+            KFImage(URL(string: post.imageUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(maxWidth: UIScreen.main.bounds.size.width, maxHeight: 380)
@@ -50,21 +52,15 @@ struct FeedCell: View {
             }.foregroundColor(.black)
                 .padding([.leading, .bottom], 8)
             
-            Text("100 likes").font(.system(size: 14, weight: .semibold)).padding(.leading, 8).padding(.bottom, 4)
+            Text("\(post.likes) likes").font(.system(size: 14, weight: .semibold)).padding(.leading, 8).padding(.bottom, 4)
             
             HStack(spacing: 5) {
-                Text("User01").font(.system(size: 14, weight: .semibold))
-                Text("A test photo").font(.system(size: 15))
+                Text(post.ownerUsername).font(.system(size: 14, weight: .semibold))
+                Text(" \(post.caption)").font(.system(size: 15))
             }.padding(.horizontal, 8)
             
             Text("2d").font(.system(size: 14)).foregroundColor(.gray).padding(.leading, 8).padding(.top, -4)
             
         }
-    }
-}
-
-struct FeedCell_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedCell()
     }
 }
