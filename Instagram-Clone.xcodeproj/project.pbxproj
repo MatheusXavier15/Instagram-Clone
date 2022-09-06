@@ -13,6 +13,8 @@
 		062D78CB28834560005E7311 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D78CA28834560005E7311 /* CustomTextField.swift */; };
 		062D78CD2883456A005E7311 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D78CC2883456A005E7311 /* CustomSecureField.swift */; };
 		066EBF56289CA4ED004B507F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EBF55289CA4ED004B507F /* SearchViewModel.swift */; };
+		0698C8BA28C65AE2000AD20A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698C8B928C65AE2000AD20A /* ProfileViewModel.swift */; };
+		0698C8BC28C65F46000AD20A /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698C8BB28C65F46000AD20A /* UserServices.swift */; };
 		069AF6212881A0B500C210A4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6202881A0B500C210A4 /* SearchBar.swift */; };
 		069AF6232881A3E100C210A4 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6222881A3E100C210A4 /* PostGridView.swift */; };
 		069AF6252881A5B000C210A4 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF6242881A5B000C210A4 /* UserListView.swift */; };
@@ -55,6 +57,8 @@
 		062D78CA28834560005E7311 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		062D78CC2883456A005E7311 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		066EBF55289CA4ED004B507F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		0698C8B928C65AE2000AD20A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0698C8BB28C65F46000AD20A /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		069AF6202881A0B500C210A4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		069AF6222881A3E100C210A4 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		069AF6242881A5B000C210A4 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				06F5234D289048A300F605E7 /* ImageUploader.swift */,
+				0698C8BB28C65F46000AD20A /* UserServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 		06D6EF572881246D0095C49A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				0698C8B928C65AE2000AD20A /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				06D6EF60288124DE0095C49A /* ProfileView.swift in Sources */,
 				062D78C928833C49005E7311 /* ResetPasswordView.swift in Sources */,
 				069AF63328827E1100C210A4 /* ImagePicker.swift in Sources */,
+				0698C8BC28C65F46000AD20A /* UserServices.swift in Sources */,
 				069AF62D28826A4F00C210A4 /* ProfileHeaderView.swift in Sources */,
 				06D6EF642881251D0095C49A /* UploadPostView.swift in Sources */,
 				062D78C728833C32005E7311 /* SignUpView.swift in Sources */,
@@ -417,6 +424,7 @@
 				06F5235228907F7F00F605E7 /* User.swift in Sources */,
 				069AF631288273F500C210A4 /* ProfileActionButtonView.swift in Sources */,
 				06F5234C289025A100F605E7 /* AuthViewModel.swift in Sources */,
+				0698C8BA28C65AE2000AD20A /* ProfileViewModel.swift in Sources */,
 				06D6EF662881290E0095C49A /* FeedCell.swift in Sources */,
 				069AF62B2881AE8C00C210A4 /* NotificationCell.swift in Sources */,
 				062D78C528833C29005E7311 /* LoginView.swift in Sources */,
