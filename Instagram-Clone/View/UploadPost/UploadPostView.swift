@@ -12,6 +12,8 @@ struct UploadPostView: View {
     @State var postImage: Image?
     @State var text: String = ""
     @State var imagePickerPresented = false
+    @Binding var tagIndex: Int
+    @ObservedObject var viewModel: UploadPostViewModel = UploadPostViewModel()
     var body: some View {
         VStack {
             if postImage == nil {
@@ -42,28 +44,42 @@ struct UploadPostView: View {
                         .frame(width: 96, height: 96)
                         .clipped()
                     
-                    TextField("Enter your caption...", text: $text)
+                    TextArea(text: $text, placeholder: "Enter your caption...")
+                        .frame(height: 150)
                 }.padding()
-                Button {
-                    //
-                } label: {
-                    Text("Share")
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(width: 360, height: 50)
-                        .background(Color.blue)
-                        .cornerRadius(5)
-                        .foregroundColor(.white)
-                }.padding()
-
+                VStack {
+                    Button {
+                        if let selectedImage = selectedImage {
+                            viewModel.uploadPost(caption: text, image: selectedImage) { _ in
+                                self.text = ""
+                                self.postImage = nil
+                                self.tagIndex = 0
+                            }
+                        }
+                    } label: {
+                        Text("Share")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 360, height: 50)
+                            .background(Color.blue)
+                            .cornerRadius(5)
+                            .foregroundColor(.white)
+                    }.padding(.horizontal)
+                    
+                    Button {
+                        self.text = ""
+                        self.postImage = nil
+                    } label: {
+                        Text("Cancel")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 360, height: 50)
+                            .background(Color.clear)
+                            .border(.red, width: 1)
+                            .foregroundColor(.red)
+                    }.padding(.horizontal)
+                }
             }
             Spacer()
         }
         
-    }
-}
-
-struct UploadPostView_Previews: PreviewProvider {
-    static var previews: some View {
-        UploadPostView()
     }
 }
