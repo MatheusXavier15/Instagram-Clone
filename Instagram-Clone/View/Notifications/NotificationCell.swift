@@ -34,7 +34,8 @@ struct NotificationCell: View {
                         .clipShape(Circle())
                     HStack(spacing: 5) {
                         Text(viewModel.notification.username).font(.system(size: 14, weight: .semibold))
-                        Text(viewModel.notification.type.notificationMessage).font(.system(size: 15))
+                        Text(viewModel.notification.type.notificationMessage).font(.system(size: 15)) +
+                        Text(" \(viewModel.timeStampString)").foregroundColor(.gray).font(.system(size: 12))
                     }.padding(.horizontal, 8)
                 }
             }

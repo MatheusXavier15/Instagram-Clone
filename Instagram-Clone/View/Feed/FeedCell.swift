@@ -73,7 +73,7 @@ struct FeedCell: View {
                 Text(" \(viewModel.post.caption)").font(.system(size: 15))
             }.padding(.horizontal, 8)
             
-            Text("2d").font(.system(size: 14)).foregroundColor(.gray).padding(.leading, 8).padding(.top, -4)
+            Text(viewModel.timeStampString).font(.system(size: 14)).foregroundColor(.gray).padding(.leading, 8).padding(.top, -4)
             
         }
     }

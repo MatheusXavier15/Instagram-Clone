@@ -28,6 +28,7 @@ class NotificationsViewModel: ObservableObject {
     
     static func uploadNotifications(toUid uid: String, type: NotificationType, post: Post? = nil){
         guard let user = AuthViewModel.shared.currentUser else { return }
+        guard uid != user.id else { return }
         guard let id = user.id else { return }
         var data: [String: Any] = [
             "profileImageUrl": user.profileImageUrl,

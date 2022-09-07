@@ -32,14 +32,16 @@ class PostGridViewModel: ObservableObject {
     }
     
     func fetchExplorePosts(){
-        COLLECTION_POSTS.getDocuments { snapshot, _ in
+        COLLECTION_POSTS.order(by: "likes", descending: true).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             self.posts = documents.compactMap({ try? $0.data(as: Post.self) })
         }
     }
     
     func fetchUserPosts(forUid uid: String){
-        COLLECTION_POSTS.whereField("ownerId", isEqualTo: uid).getDocuments { snapshot, _ in
+        COLLECTION_POSTS
+            .whereField("ownerId", isEqualTo: uid)
+            .order(by: "timestamps", descending: true).whereField("ownerId", isEqualTo: uid).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             self.posts = documents.compactMap({ try? $0.data(as: Post.self) })
         }

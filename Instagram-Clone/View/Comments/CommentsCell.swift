@@ -25,7 +25,7 @@ struct CommentsCell: View {
                 Text(" \(comment.comment)")
                     .font(.system(size: 14))
             }
-            Text("2 d")
+            Text(" \(comment.timeStampString ?? "")")
                 .foregroundColor(.gray)
                 .font(.system(size: 12))
                 .padding([.leading,.top], 4)
