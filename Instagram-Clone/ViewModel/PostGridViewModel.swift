@@ -39,11 +39,10 @@ class PostGridViewModel: ObservableObject {
     }
     
     func fetchUserPosts(forUid uid: String){
-        COLLECTION_POSTS
-            .whereField("ownerId", isEqualTo: uid)
-            .order(by: "timestamps", descending: true).whereField("ownerId", isEqualTo: uid).getDocuments { snapshot, _ in
+        COLLECTION_POSTS.whereField("ownerId", isEqualTo: uid).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
-            self.posts = documents.compactMap({ try? $0.data(as: Post.self) })
+            let posts = documents.compactMap({ try? $0.data(as: Post.self) })
+            self.posts = posts.sorted(by: {$0.timestamps.dateValue() < $1.timestamps.dateValue()})
         }
     }
 }

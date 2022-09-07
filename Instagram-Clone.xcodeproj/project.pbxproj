@@ -32,6 +32,7 @@
 		069E055A28C8344B00C9123A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E055928C8344B00C9123A /* Notification.swift */; };
 		069E055C28C8376A00C9123A /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E055B28C8376A00C9123A /* NotificationsViewModel.swift */; };
 		069E055E28C83DA100C9123A /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E055D28C83DA100C9123A /* NotificationCellViewModel.swift */; };
+		069E056028C851FE00C9123A /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E055F28C851FE00C9123A /* LazyView.swift */; };
 		06A484D428C6EC5C006F99B4 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */; };
 		06A484D628C6F743006F99B4 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A484D528C6F743006F99B4 /* FeedCellViewModel.swift */; };
 		06D6EF372881229C0095C49A /* Instagram_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D6EF362881229C0095C49A /* Instagram_CloneApp.swift */; };
@@ -90,6 +91,7 @@
 		069E055928C8344B00C9123A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		069E055B28C8376A00C9123A /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		069E055D28C83DA100C9123A /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
+		069E055F28C851FE00C9123A /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		06A484D528C6F743006F99B4 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		06D6EF332881229C0095C49A /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +212,7 @@
 				062D78CC2883456A005E7311 /* CustomSecureField.swift */,
 				06F5234F28907A7800F605E7 /* Constants.swift */,
 				0698C8C128C6DBB9000AD20A /* TextArea.swift */,
+				069E055F28C851FE00C9123A /* LazyView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			files = (
 				0698C8C628C6E425000AD20A /* FeedViewModel.swift in Sources */,
 				06D6EF5E288124D00095C49A /* SearchView.swift in Sources */,
+				069E056028C851FE00C9123A /* LazyView.swift in Sources */,
 				069AF6272881A5B700C210A4 /* UserCell.swift in Sources */,
 				06D6EF5C288124C00095C49A /* FeedView.swift in Sources */,
 				069AF6232881A3E100C210A4 /* PostGridView.swift in Sources */,
