@@ -48,12 +48,16 @@ struct FeedCell: View {
                         .foregroundColor(didLike ? .red : .black)
                         .frame(width: 20, height: 20)
                 }.padding(4)
-                Button {} label: {
+                
+                NavigationLink {
+                    CommentsView(post: viewModel.post)
+                } label: {
                     Image(systemName: "bubble.left")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 20, height: 20)
-                }.padding(4)
+                }
+
                 Button {} label: {
                     Image(systemName: "paperplane")
                         .resizable()

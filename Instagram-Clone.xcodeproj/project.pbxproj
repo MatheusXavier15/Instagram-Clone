@@ -42,6 +42,11 @@
 		06D6EF62288125020095C49A /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D6EF61288125020095C49A /* NotificationsView.swift */; };
 		06D6EF642881251D0095C49A /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D6EF632881251D0095C49A /* UploadPostView.swift */; };
 		06D6EF662881290E0095C49A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D6EF652881290E0095C49A /* FeedCell.swift */; };
+		06D8FAD828C77AEF003CDEC4 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D8FAD728C77AEF003CDEC4 /* CommentsView.swift */; };
+		06D8FADA28C77B0A003CDEC4 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D8FAD928C77B0A003CDEC4 /* Comment.swift */; };
+		06D8FADC28C77B19003CDEC4 /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D8FADB28C77B19003CDEC4 /* CommentsCell.swift */; };
+		06D8FADE28C77B25003CDEC4 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D8FADD28C77B25003CDEC4 /* CommentsViewModel.swift */; };
+		06D8FAE028C77F78003CDEC4 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D8FADF28C77F78003CDEC4 /* CustomInputView.swift */; };
 		06F5234828901E4800F605E7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 06F5234728901E4800F605E7 /* Kingfisher */; };
 		06F5234A28901E8C00F605E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06F5234928901E8C00F605E7 /* GoogleService-Info.plist */; };
 		06F5234C289025A100F605E7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5234B289025A100F605E7 /* AuthViewModel.swift */; };
@@ -93,6 +98,11 @@
 		06D6EF61288125020095C49A /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		06D6EF632881251D0095C49A /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		06D6EF652881290E0095C49A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		06D8FAD728C77AEF003CDEC4 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		06D8FAD928C77B0A003CDEC4 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		06D8FADB28C77B19003CDEC4 /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		06D8FADD28C77B25003CDEC4 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		06D8FADF28C77F78003CDEC4 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		06F5234928901E8C00F605E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		06F5234B289025A100F605E7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		06F5234D289048A300F605E7 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
@@ -179,6 +189,7 @@
 			children = (
 				06F5235128907F7F00F605E7 /* User.swift */,
 				0698C8C328C6E301000AD20A /* Post.swift */,
+				06D8FAD928C77B0A003CDEC4 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 				066EBF55289CA4ED004B507F /* SearchViewModel.swift */,
 				0698C8BF28C6D536000AD20A /* UploadPostViewModel.swift */,
 				06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */,
+				06D8FADD28C77B25003CDEC4 /* CommentsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +293,7 @@
 				069AF6222881A3E100C210A4 /* PostGridView.swift */,
 				069AF6242881A5B000C210A4 /* UserListView.swift */,
 				069AF6262881A5B700C210A4 /* UserCell.swift */,
+				06D8FADF28C77F78003CDEC4 /* CustomInputView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -288,6 +301,8 @@
 		06D6EF522881243D0095C49A /* Comments */ = {
 			isa = PBXGroup;
 			children = (
+				06D8FAD728C77AEF003CDEC4 /* CommentsView.swift */,
+				06D8FADB28C77B19003CDEC4 /* CommentsCell.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -422,11 +437,14 @@
 				069AF6272881A5B700C210A4 /* UserCell.swift in Sources */,
 				06D6EF5C288124C00095C49A /* FeedView.swift in Sources */,
 				069AF6232881A3E100C210A4 /* PostGridView.swift in Sources */,
+				06D8FADE28C77B25003CDEC4 /* CommentsViewModel.swift in Sources */,
+				06D8FADA28C77B0A003CDEC4 /* Comment.swift in Sources */,
 				062D78CB28834560005E7311 /* CustomTextField.swift in Sources */,
 				06F5234E289048A300F605E7 /* ImageUploader.swift in Sources */,
 				06D6EF372881229C0095C49A /* Instagram_CloneApp.swift in Sources */,
 				06D6EF4B288123D20095C49A /* ContentView.swift in Sources */,
 				06D6EF60288124DE0095C49A /* ProfileView.swift in Sources */,
+				06D8FADC28C77B19003CDEC4 /* CommentsCell.swift in Sources */,
 				06A484D428C6EC5C006F99B4 /* PostGridViewModel.swift in Sources */,
 				062D78C928833C49005E7311 /* ResetPasswordView.swift in Sources */,
 				069AF63328827E1100C210A4 /* ImagePicker.swift in Sources */,
@@ -434,9 +452,11 @@
 				0698C8BC28C65F46000AD20A /* UserServices.swift in Sources */,
 				0698C8C228C6DBB9000AD20A /* TextArea.swift in Sources */,
 				069AF62D28826A4F00C210A4 /* ProfileHeaderView.swift in Sources */,
+				06D8FAE028C77F78003CDEC4 /* CustomInputView.swift in Sources */,
 				06D6EF642881251D0095C49A /* UploadPostView.swift in Sources */,
 				062D78C728833C32005E7311 /* SignUpView.swift in Sources */,
 				069AF62F288272C500C210A4 /* UserStatView.swift in Sources */,
+				06D8FAD828C77AEF003CDEC4 /* CommentsView.swift in Sources */,
 				069AF6252881A5B000C210A4 /* UserListView.swift in Sources */,
 				06D6EF5A288124A70095C49A /* MainTabView.swift in Sources */,
 				062D78CD2883456A005E7311 /* CustomSecureField.swift in Sources */,
