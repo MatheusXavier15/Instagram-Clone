@@ -31,7 +31,6 @@ struct FeedCell: View {
                 
                 Text(viewModel.post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold))
-                
             }.padding([.leading, .bottom], 8)
             KFImage(URL(string: viewModel.post.imageUrl))
                 .resizable()

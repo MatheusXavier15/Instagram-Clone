@@ -29,6 +29,9 @@
 		069AF62F288272C500C210A4 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF62E288272C500C210A4 /* UserStatView.swift */; };
 		069AF631288273F500C210A4 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF630288273F500C210A4 /* ProfileActionButtonView.swift */; };
 		069AF63328827E1100C210A4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069AF63228827E1100C210A4 /* ImagePicker.swift */; };
+		069E055A28C8344B00C9123A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E055928C8344B00C9123A /* Notification.swift */; };
+		069E055C28C8376A00C9123A /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E055B28C8376A00C9123A /* NotificationsViewModel.swift */; };
+		069E055E28C83DA100C9123A /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E055D28C83DA100C9123A /* NotificationCellViewModel.swift */; };
 		06A484D428C6EC5C006F99B4 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */; };
 		06A484D628C6F743006F99B4 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A484D528C6F743006F99B4 /* FeedCellViewModel.swift */; };
 		06D6EF372881229C0095C49A /* Instagram_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D6EF362881229C0095C49A /* Instagram_CloneApp.swift */; };
@@ -84,6 +87,9 @@
 		069AF62E288272C500C210A4 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		069AF630288273F500C210A4 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		069AF63228827E1100C210A4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		069E055928C8344B00C9123A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		069E055B28C8376A00C9123A /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		069E055D28C83DA100C9123A /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
 		06A484D328C6EC5C006F99B4 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		06A484D528C6F743006F99B4 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		06D6EF332881229C0095C49A /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				06F5235128907F7F00F605E7 /* User.swift */,
+				069E055928C8344B00C9123A /* Notification.swift */,
 				0698C8C328C6E301000AD20A /* Post.swift */,
 				06D8FAD928C77B0A003CDEC4 /* Comment.swift */,
 			);
@@ -328,6 +335,8 @@
 		06D6EF552881245E0095C49A /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				069E055B28C8376A00C9123A /* NotificationsViewModel.swift */,
+				069E055D28C83DA100C9123A /* NotificationCellViewModel.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -437,6 +446,7 @@
 				069AF6272881A5B700C210A4 /* UserCell.swift in Sources */,
 				06D6EF5C288124C00095C49A /* FeedView.swift in Sources */,
 				069AF6232881A3E100C210A4 /* PostGridView.swift in Sources */,
+				069E055C28C8376A00C9123A /* NotificationsViewModel.swift in Sources */,
 				06D8FADE28C77B25003CDEC4 /* CommentsViewModel.swift in Sources */,
 				06D8FADA28C77B0A003CDEC4 /* Comment.swift in Sources */,
 				062D78CB28834560005E7311 /* CustomTextField.swift in Sources */,
@@ -471,6 +481,8 @@
 				0698C8BA28C65AE2000AD20A /* ProfileViewModel.swift in Sources */,
 				06D6EF662881290E0095C49A /* FeedCell.swift in Sources */,
 				069AF62B2881AE8C00C210A4 /* NotificationCell.swift in Sources */,
+				069E055A28C8344B00C9123A /* Notification.swift in Sources */,
+				069E055E28C83DA100C9123A /* NotificationCellViewModel.swift in Sources */,
 				062D78C528833C29005E7311 /* LoginView.swift in Sources */,
 				069AF6292881AB8000C210A4 /* Extensions.swift in Sources */,
 				06F5235028907A7800F605E7 /* Constants.swift in Sources */,
