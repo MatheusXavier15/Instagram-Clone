@@ -9,13 +9,14 @@ import Foundation
 import FirebaseFirestoreSwift
 
 struct User: Identifiable, Decodable {
+    @DocumentID var id: String?
     let email: String
     let username: String
     let fullname: String
     let profileImageUrl: String
-    @DocumentID var id: String?
     var isFollowed: Bool? = false
     var stats: UserStats?
+    var bios: String?
     
     var isCurrentUser: Bool {
         return AuthViewModel.shared.userSession?.uid == id

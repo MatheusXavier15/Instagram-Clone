@@ -35,11 +35,12 @@ struct ProfileHeaderView: View {
                 Text(viewModel.user.fullname)
                     .font(.system(size: 16, weight: .semibold))
                     .padding([.leading, .top])
-                Text("User's test biography")
-                    .font(.system(size: 16))
-                    .padding(.horizontal)
-                    .padding(.top, 1)
-                
+                if let bio = viewModel.user.bios {
+                    Text(bio)
+                        .font(.system(size: 15))
+                        .padding(.horizontal)
+                        .padding(.top, 1)
+                }
             }.padding(.horizontal)
             ProfileActionButtonView(viewModel: viewModel).padding()
 
